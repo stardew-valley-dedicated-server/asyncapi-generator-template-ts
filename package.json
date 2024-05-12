@@ -1,0 +1,41 @@
+{
+  "name": "asyncapi-generator-template-websocket-ts-nuxt3",
+  "scripts": {
+    "test:generate": "ag test/fixtures/asyncapi.yaml ./ --output .output -p output=.output --force-write",
+    "test:clean": "rimraf .output",
+    "test:start": "vitest",
+    "test": "npm run test:clean && npm run test:generate && npm run test:start"
+  },
+  "generator": {
+    "apiVersion": "v3",
+    "generator": ">=1.17.25",
+    "renderer": "react",
+    "supportedProtocols": [
+      "ws"
+    ],
+    "parameters": {
+      "output": {
+        "description": "Output directory, same as output path of generate command.",
+        "required": true
+      }
+    }
+  },
+  "dependencies": {
+    "@asyncapi/generator-react-sdk": "^0.2.25",
+    "@asyncapi/modelina": "^3.4.9",
+    "mkdirp": "^3.0.1"
+  },
+  "devDependencies": {
+    "@asyncapi/generator": "^2.0.1",
+    "@stylistic/eslint-plugin": "^2.1.0",
+    "@typescript-eslint/eslint-plugin": "^7.8.0",
+    "@typescript-eslint/parser": "^7.8.0",
+    "@vueuse/core": "^10.9.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "globals": "^15.2.0",
+    "rimraf": "^5.0.6",
+    "vitest": "^1.6.0",
+    "vue": "^3.4.27"
+  }
+}
