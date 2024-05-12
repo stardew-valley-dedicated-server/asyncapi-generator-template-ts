@@ -1,4 +1,8 @@
 import { FormatHelpers } from '@asyncapi/modelina';
+import * as path from 'node:path';
+
+
+const templateDir = path.join(__dirname, '..');
 
 const asyncapiToJsTypes = {
   integer: 'number',
@@ -6,6 +10,13 @@ const asyncapiToJsTypes = {
 
 export function isModelType(type) {
   return type === 'object';
+}
+
+// Colors
+export const magenta = text => `\x1b[35m${text}\x1b[0m`;
+
+export function getTemplateDir(dir = '') {
+  return path.join(templateDir, dir);
 }
 
 export function isNativeType(type) {
