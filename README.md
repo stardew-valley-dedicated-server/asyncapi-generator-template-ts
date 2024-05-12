@@ -1,9 +1,9 @@
-#                        
+#                         
 
-<h1 align="center">Typescript Nuxt3 WebSocket AsyncAPI Generator Template</h1>
+<h1 align="center">AsyncAPI Generator Template - Typescript</h1>
 
 <p align="center">
-  <em>This is a TypeScript Nuxt3 Websocket Client template for the AsyncAPI generator.</em>
+  <em>This is a TypeScript Nuxt3 Websocket Messages and Client template for the AsyncAPI generator.</em>
 </p>
 
 This template is for generating a TypeScript Nuxt3 Websocket Client based on your AsyncAPI 3.0.0 document.
@@ -15,21 +15,23 @@ See [the contribution guidelines](#Contributing) for how to do so.
 
 Example use-cases can be found in our [tests](./test).
 
-Information about the generated files and a description can be found under [the documentation folder](./docs/general.md).
+Information about the generated files and a description can be found
+under [the documentation folder](./docs/general.md).
 
 ## Requirements
 
 * @asyncapi/generator >=1.17.25 <2.0.0
 
-Install the generator through [npm or run it from docker official installer](https://github.com/asyncapi/generator#install).
+Install the generator
+through [npm or run it from docker official installer](https://github.com/asyncapi/generator#install).
 
 ## Template Parameters
 
 These are the available template parameters:
 
-| Parameter          | Type    | Description                                                                                                                                               |
-|--------------------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| output             | String  | The output directory needs to be passed to be passed to the templates. Add the following to the CLI when generating your code `-p output=path/to/output`. |
+| Parameter | Type   | Description                                                                                                                                               |
+|-----------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| output    | String | The output directory needs to be passed to be passed to the templates. Add the following to the CLI when generating your code `-p output=path/to/output`. |
 
 ## Features
 

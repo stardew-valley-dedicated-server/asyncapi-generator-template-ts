@@ -1,5 +1,6 @@
 {
-  "name": "asyncapi-generator-template-websocket-ts-nuxt3",
+  "name": "asyncapi-generator-template-ts",
+  "description": "Typescript Nuxt3 WebSocket AsyncAPI Generator Template",
   "scripts": {
     "test:generate": "ag test/fixtures/asyncapi.yaml ./ --output .output -p output=.output --force-write",
     "test:clean": "rimraf .output",
